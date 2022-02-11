@@ -1,7 +1,7 @@
 #include <iostream>
 #include "ToyRobot.h"
 
-const std::vector<std::string> commands{ "place", "move", "left", "right", "report", "exit" };
+const std::vector<std::string> commands{ "place,", "move", "left", "right", "report", "exit" };
 
 bool validateCommand(const std::string& command)
 {
