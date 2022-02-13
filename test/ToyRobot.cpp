@@ -1,5 +1,6 @@
 #include "ToyRobot.h"
 #include <iostream>
+
 ToyRobot::ToyRobot()
 {
 	pos_ = std::make_shared<Position>(-1, -1, "");
@@ -27,6 +28,5 @@ void ToyRobot::rotate(const ERotation rot)
 
 void ToyRobot::place(int x, int y, const std::string& dir)
 {
-	std::cout << __FUNCTION__ << ": " << x << ", " << y << ", " << dir << std::endl;
 	pos_->setPosition(x, y, dir);
 }
